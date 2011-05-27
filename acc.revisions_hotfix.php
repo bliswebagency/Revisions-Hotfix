@@ -37,10 +37,13 @@ class Revisions_hotfix_acc {
 	 */
 	public function set_sections()
 	{
-		$EE =& get_instance();
+		$this->EE =& get_instance();
 		
+		if(	$this->EE->input->get('D') == "cp" && 	$this->EE->input->get('C') == "content_publish" &&	$this->EE->input->get('M') == "entry_form"){
+		$this->EE->cp->load_package_js('enable_versioning');
+		}
 		
-		$this->sections['Revisions'] = $EE->load->view('accessory_revisions', '', TRUE);
+		#$this->sections['Revisions'] = $EE->load->view('accessory_revisions', '', TRUE);
 		
 	}
 	
