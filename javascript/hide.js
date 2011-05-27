@@ -1,2 +1,2 @@
-$("a.red_button").parent().hide();
-$("#red_button").hide();
+$("a.revisions_hotfix").parent().hide();
+$("#revisions_hotfix").hide();
