@@ -42,7 +42,7 @@ class Revisions_hotfix_acc {
 		if(	$this->EE->input->get('D') == "cp" && 	$this->EE->input->get('C') == "content_publish" &&	$this->EE->input->get('M') == "entry_form"){
 		$this->EE->cp->load_package_js('enable_versioning');
 		}
-		
+		$this->EE->cp->load_package_js('hide');
 		#$this->sections['Revisions'] = $EE->load->view('accessory_revisions', '', TRUE);
 		
 	}
